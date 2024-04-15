@@ -27,6 +27,9 @@ function fruitProcessor(apples,pineapples) {
 
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
+console.log(fruitProcessor(5, 0));
 
 const applePineappleJuice = fruitProcessor(2, 4);
 console.log(applePineappleJuice);
+
+const num = Number ('23');
