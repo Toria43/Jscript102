@@ -105,6 +105,104 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 
+/*Arrays*/
+const friend1 = 'Timmy';
+const friend2 = 'Joy';
+const friend3 = 'Tobi';
+
+const friends = ['Timmy', 'Joy', 'Tobi'];
+console.log(friends)
+
+const year = new Array(1990, 1995, 2000, 2003);
+
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[1] = 'Elizabeth';
+console.log(friends);
+// you cannot mutatate all at once e.g friends = ['Bob',  'Chole']
+
+const firstName= 'Victory';
+const victory = [firstName, 'Agholor', 2024 - 2003, 'student', friends];
+console.log(victory);
+console.log(victory.length);
+
+//Exercise
+const calcAge = function (birthYear){
+    return 2037 - birthYear;
+}
+const years = [1990, 1995, 2000, 2003, 2015];
+
+const old1 = calcAge(years[0]);
+const old2 = calcAge(years[1]);
+const old3 = calcAge(years[years.length - 1]);
+console.log(old1, old2, old3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
+
+/*Methods(Basic Array Operators)*/
+const friends = ['Timmy', 'Joy', 'Tobi'];
+friends.push('Elizabeth');
+console.log(friends);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
