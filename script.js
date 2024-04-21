@@ -204,14 +204,14 @@ const victoryArray = [
     ['Timmy', 'Tobi', 'Joy']
 ];
 // object literal sentence
-const vicky = {
+/*const vicky = {
     firstName: 'Victory',
     lastName: 'Agholor',
     age: 2037-2003,
     job: 'teacher',
     friends: ['Timmy', 'Tobi', 'Joy']
 };
-console.log(vicky);
+console.log(vicky);*/
 
 /*Dot Notation - can only use real property name*/
 console.log(vicky.lastName);
@@ -248,11 +248,20 @@ const vicky = {
     }
 };
 console.log(vicky.calAge(1991));
-console.log(vicky['calAge'](1991))
+console.log(vicky['calAge'(1991)]);
 
 
 
+/* Print “Number is even” if the number is divisible by 2.
+Else print “Number is odd” if the number returns a remainder when divided by 2.*/
 
+const number = 20;
+
+if (number % 2 === 0) {
+    console.log(`${number} is even!`);
+} else {
+    console.log(`${number} is odd!`);
+}
 
 
 
