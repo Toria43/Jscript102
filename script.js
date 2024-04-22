@@ -204,14 +204,14 @@ const victoryArray = [
     ['Timmy', 'Tobi', 'Joy']
 ];
 // object literal sentence
-/*const vicky = {
+const vicky = {
     firstName: 'Victory',
     lastName: 'Agholor',
     age: 2037-2003,
     job: 'teacher',
     friends: ['Timmy', 'Tobi', 'Joy']
 };
-console.log(vicky);*/
+console.log(vicky);
 
 /*Dot Notation - can only use real property name*/
 console.log(vicky.lastName);
@@ -235,25 +235,62 @@ console.log(vicky);
 console.log(`${vicky.firstName} has ${vicky.friends.length}, and her best friend is called ${vicky.friends[0]}`);
 
 /* Object Methods*/
-const vicky = {
+const vick = {
     firstName: 'Victory',
     lastName: 'Agholor',
     birthYear: 2003,
     job: 'teacher',
     friends: ['Timmy', 'Tobi', 'Joy'],
-    hasDriversLicense: true,
-
-    calAge: function (birthYear) {
-        return 2037 - birthYear;
-    }
+    hasDriversLicense: true
+    // calAge: function(birthYear) {
+    //     return 2037 - birthYear;
+    // }
 };
-console.log(vicky.calAge(1991));
-console.log(vicky['calAge'(1991)]);
+
+    calAge: function() {
+        console.log(this);
+        return 2037 - this.birthYear; 
+    };
+// console.log(vick.calAge(1991));
+// console.log(vick['calAge'](1991));
+console.log(vick.calAge());
 
 
 
-/* Print “Number is even” if the number is divisible by 2.
-Else print “Number is odd” if the number returns a remainder when divided by 2.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// Print “Number is even” if the number is divisible by 2.
+// Else print “Number is odd” if the number returns a remainder when divided by 2.
 
 const number = 20;
 
@@ -261,38 +298,4 @@ if (number % 2 === 0) {
     console.log(`${number} is even!`);
 } else {
     console.log(`${number} is odd!`);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}*/
