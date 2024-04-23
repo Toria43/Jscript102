@@ -126,10 +126,10 @@ friends[1] = 'Elizabeth';
 console.log(friends);
 // you cannot mutatate all at once e.g friends = ['Bob',  'Chole']
 
-const firstName= 'Victory';
-const victory = [firstName, 'Agholor', 2024 - 2003, 'student', friends];
-console.log(victory);
-console.log(victory.length);
+// const firstName= 'Victory';
+// const victory = [firstName, 'Agholor', 2024 - 2003, 'student', friends];
+// console.log(victory);
+// console.log(victory.length);
 
 //Exercise
 // const calcAge = function (birthYear){
@@ -196,14 +196,14 @@ console.log(bills, tips, totals);
 
 /*Objects*/
 // objects are used to group variables that belong together, and its order do not matter at all
-const victoryArray = [
-    'Victory',
-    'Agholor',
-    2040 - 2003,
-    'student',
-    ['Timmy', 'Tobi', 'Joy']
-];
-// object literal sentence
+// const victoryArray = [
+//     'Victory',
+//     'Agholor',
+//     2040 - 2003,
+//     'student',
+//     ['Timmy', 'Tobi', 'Joy']
+// ];
+/* OBJECT LITERAL SENTENCE*/
 const vicky = {
     firstName: 'Victory',
     lastName: 'Agholor',
@@ -315,10 +315,55 @@ for(let rep = 1; rep <= 10;
     //rep = rep + 1
     rep++) {
 console.log(`Exquisite repitition ${rep}`);
+    };
+
+/*Looping array*/
+const victory = [
+    'Victory',
+    'Agholor',
+    2040 - 2003,
+    'student',
+    ['Timmy', 'Tobi', 'Joy'],
+    true
+];
+const types = [];
+// console.log(victory[0]);
+// console.log(victory[1]);
+// .
+// .
+// .
+// console.log(victory[4]);
+// victory[5] doesn't exist
+for(let i = 0; i < victory.length; i++) {
+ // reading for victory array
+    console.log(victory[i], typeof victory[i]);
+//filing types array
+//types[i] = typeof victory[i];
+     types.push(typeof victory[i]);
     }
+console.log(types);
 
+const years = [1991, 2003, 2007, 2020];
+const ages = [];
 
+for(let i = 0; i < years.length; i++) {
+    ages.push(2030 - years[i]);
+}
+console.log(ages);
 
+// Continue and Break statement
+console.log('---ONLY STRINGS---')
+for(let i = 0; i < victory.length; i++) {
+    if (typeof victory[i] !== 'string') continue;
+
+    console.log(victory[i], typeof victory[i]);
+}
+console.log('---BREAK WITH NUMBER---')
+for(let i = 0; i < victory.length; i++) {
+    if (typeof victory[i] === 'number') break;
+
+    console.log(victory[i], typeof victory[i]);
+}
 
 
 
