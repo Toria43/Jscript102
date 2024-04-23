@@ -299,7 +299,7 @@ if (mark.bmi > john.bmi) {
      };
 
 /*Loops*/
-//repetitions: USING THE forLOOP
+//repetitions: 
 // console.log('Exquisite repitition 1');
 // console.log('Exquisite repitition 2');
 // console.log('Exquisite repitition 3');
@@ -310,7 +310,7 @@ if (mark.bmi > john.bmi) {
 // console.log('Exquisite repitition 8');
 // console.log('Exquisite repitition 9');
 // console.log('Exquisite repitition 10');
-
+/* forLOOP */
 for(let rep = 1; rep <= 10;
     //rep = rep + 1
     rep++) {
@@ -387,8 +387,20 @@ for (let rep = 1; rep < 6;  rep++) {
 }
 }
 
+/* whileLOOP */
+let rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE: Exquisite repitition ${rep}`);
+    rep++;
+}
 
+let dice = Math.trunc(Math.random() * 6) + 1;
 
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
+}
 
 
 
