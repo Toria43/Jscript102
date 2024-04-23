@@ -298,7 +298,24 @@ if (mark.bmi > john.bmi) {
     console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)
      };
 
+/*Loops*/
+//repetitions: USING THE forLOOP
+// console.log('Exquisite repitition 1');
+// console.log('Exquisite repitition 2');
+// console.log('Exquisite repitition 3');
+// console.log('Exquisite repitition 4');
+// console.log('Exquisite repitition 5');
+// console.log('Exquisite repitition 6');
+// console.log('Exquisite repitition 7');
+// console.log('Exquisite repitition 8');
+// console.log('Exquisite repitition 9');
+// console.log('Exquisite repitition 10');
 
+for(let rep = 1; rep <= 10;
+    //rep = rep + 1
+    rep++) {
+console.log(`Exquisite repitition ${rep}`);
+    }
 
 
 
