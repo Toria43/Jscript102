@@ -365,7 +365,18 @@ for(let i = 0; i < victory.length; i++) {
     console.log(victory[i], typeof victory[i]);
 }
 
-
+/* LOOPING BACKWARDS */
+const chole = [
+    'Chole',
+    'Garret',
+    2040 - 2004,
+    'teacher',
+    ['Theodore', 'Tori', 'Justin']
+];
+//4, 3, ..., 0
+for(let i = chole.length - 1; i >= 0; i--) {
+    console.log(i, chole[i]);
+}
 
 
 
