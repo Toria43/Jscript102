@@ -2,16 +2,16 @@
 
 let hasDriversLicense = false;
 const passTest = true;
-
+console.log();
 if (passTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log('I can Drive! :D')
+if (hasDriversLicense) console.log('I can Drive! :D');
 
 //const interface = 'Audio';
 //const private = 534;
 
 /*functions*/
 function logger() {
-    console.log('My name is Victory');
+  console.log('My name is Victory');
 }
 
 //calling / running / invoking function
@@ -19,10 +19,10 @@ logger();
 logger();
 logger();
 
-function fruitProcessor(apples,pineapples) {
-    console.log(apples, pineapples);
-    const juice = `Juice with ${apples} apples and ${pineapples} pineapples.`;
-    return juice;
+function fruitProcessor(apples, pineapples) {
+  console.log(apples, pineapples);
+  const juice = `Juice with ${apples} apples and ${pineapples} pineapples.`;
+  return juice;
 }
 
 const appleJuice = fruitProcessor(5, 0);
@@ -32,24 +32,24 @@ console.log(fruitProcessor(5, 0));
 const applePineappleJuice = fruitProcessor(2, 4);
 console.log(applePineappleJuice);
 
-const num = Number ('23');
+const num = Number('23');
 
 /*Function Declaration*/
 //You can call a function declaration before ypu define it although it is not advisable
 function calcAge1(birthYear) {
-   // const age = 2037 - birthYear;
-   // return age 
-   return 2037 - birthYear; 
+  // const age = 2037 - birthYear;
+  // return age
+  return 2037 - birthYear;
 }
 
-const age1 = calcAge1 (1991);
+const age1 = calcAge1(1991);
 console.log(age1);
 
 /*Function  Expression*/
 //You cannot call a function expression before defining it
 const calcAge2 = function (birthYear) {
-    return 2037 - birthYear;
-}
+  return 2037 - birthYear;
+};
 const age2 = calcAge2(1991);
 console.log(age1, age2);
 
@@ -59,24 +59,24 @@ const age3 = calcAge3(1991);
 console.log(age3);
 
 const yearsUntilretirement = (birthYear, firstName) => {
- const age = 2037 - birthYear;
- const retirement = 65- age;
- return retirement;
- return `${firstName} retires in ${retirement} years`;
-}
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
+  return `${firstName} retires in ${retirement} years`;
+};
 console.log(yearsUntilretirement(1991, 'Chole'));
 console.log(yearsUntilretirement(1980, 'Phoebe'));
 
 /*Call a function calling other functions*/
-function cutFruitPieces (fruit) {
-    return fruit * 4;
+function cutFruitPieces(fruit) {
+  return fruit * 4;
 }
-function fruitProcessor(apples,pineapples) {
-    const applePieces = cutFruitPieces(apples);
-    const pineapplePieces = cutFruitPieces(pineapples);
+function fruitProcessor(apples, pineapples) {
+  const applePieces = cutFruitPieces(apples);
+  const pineapplePieces = cutFruitPieces(pineapples);
 
-    const juice = `Juice with ${applePieces} apples and ${pineapplePieces} pineapples.`;
-    return juice;
+  const juice = `Juice with ${applePieces} apples and ${pineapplePieces} pineapples.`;
+  return juice;
 }
 console.log(fruitProcessor(2, 3));
 
@@ -111,7 +111,7 @@ const friend2 = 'Joy';
 const friend3 = 'Tobi';
 
 const friends = ['Timmy', 'Joy', 'Tobi'];
-console.log(friends)
+console.log(friends);
 
 const year = new Array(1990, 1995, 2000, 2003);
 
@@ -150,7 +150,7 @@ const friend = ['Timmy', 'Joy', 'Tobi'];
 // Add Elements
 const newLength = friend.push('Elizabeth');
 console.log(friend);
-console.log (newLength);
+console.log(newLength);
 
 friend.unshift('Simi');
 console.log(friend);
@@ -173,9 +173,8 @@ console.log(friend.includes('Simi'));
 console.log(friend.includes('24'));
 
 if (friend.includes('Joy')) {
-    console.log('You have a friend called Joy!')
+  console.log('You have a friend called Joy!');
 }
-
 
 /*Challenge 2*/
 /* FROM CHALLENGE 5
@@ -193,7 +192,6 @@ console.log(` The bill was ${bill}, the tip was ${tip}, and the total value ${bi
 
 // console.log(bills, tips, totals);
 
-
 /*Objects*/
 // objects are used to group variables that belong together, and its order do not matter at all
 // const victoryArray = [
@@ -205,11 +203,11 @@ console.log(` The bill was ${bill}, the tip was ${tip}, and the total value ${bi
 // ];
 /* OBJECT LITERAL SENTENCE*/
 const vicky = {
-    firstName: 'Victory',
-    lastName: 'Agholor',
-    age: 2037-2003,
-    job: 'teacher',
-    friends: ['Timmy', 'Tobi', 'Joy']
+  firstName: 'Victory',
+  lastName: 'Agholor',
+  age: 2037 - 2003,
+  job: 'teacher',
+  friends: ['Timmy', 'Tobi', 'Joy'],
 };
 console.log(vicky);
 
@@ -222,37 +220,44 @@ const nameKey = 'Name';
 console.log(vicky['first' + nameKey]);
 console.log(vicky['last' + nameKey]);
 
-const interestedIn = prompt('What do you want to know about Vicky? Choose between firstName, lastName, age, job, friends');
+const interestedIn = prompt(
+  'What do you want to know about Vicky? Choose between firstName, lastName, age, job, friends'
+);
 if (vicky[interestedIn]) {
-console.log(vicky[interestedIn]);
+  console.log(vicky[interestedIn]);
 } else {
-    console.log('Wrong request! Choose between firstName, lastName, age, job, friends');
+  console.log(
+    'Wrong request! Choose between firstName, lastName, age, job, friends'
+  );
 }
 vicky.location = 'Nigeria';
 vicky['twitter'] = '@victoryagholor';
 console.log(vicky);
 
-console.log(`${vicky.firstName} has ${vicky.friends.length}, and her best friend is called ${vicky.friends[0]}`);
+console.log(
+  `${vicky.firstName} has ${vicky.friends.length}, and her best friend is called ${vicky.friends[0]}`
+);
 
 /* Object Methods*/
 const vick = {
-    firstName: 'Victory',
-    lastName: 'Agholor',
-    birthYear: 2003,
-    job: 'doctor',
-    friends: ['Timmy', 'Tobi', 'Joy'],
-    hasDriversLicense: false,
-    calcAge: function () {
-        this.age = 2037 - this.birthYear;
-        return this.age; 
-     },
-     getSummary: function(){
-        return`${this.firstName} is a ${this.calcAge()}-years old ${vick.job}, and she has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
-     }
-    // calAge: function(birthYear) {
-    //     return 2037 - birthYear;
-    // }
-    
+  firstName: 'Victory',
+  lastName: 'Agholor',
+  birthYear: 2003,
+  job: 'doctor',
+  friends: ['Timmy', 'Tobi', 'Joy'],
+  hasDriversLicense: false,
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-years old ${
+      vick.job
+    }, and she has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+  },
+  // calAge: function(birthYear) {
+  //     return 2037 - birthYear;
+  // }
 };
 console.log(vick.calcAge());
 
@@ -266,26 +271,25 @@ console.log(vick.age);
 // Vick is a 34 year old doctor ans she has a driver's license
 console.log(vick.getSummary());
 
-
 /*Challenge #3*/
 
 const mark = {
-    fullName: 'Mark Miller',
-    mass: "78",
-    height: "1.69",
-    calcBMI: function () {
-        this.bmi = this.mass / (this.height ** 2);
-        return this.bmi; 
-     }
+  fullName: 'Mark Miller',
+  mass: '78',
+  height: '1.69',
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
 };
 const john = {
-    fullName: 'John Smith',
-    mass: "92",
-    height: "1.95",
-    calcBMI: function () {
-        this.bmi = this.mass / (this.height ** 2);
-        return this.bmi; 
-     }
+  fullName: 'John Smith',
+  mass: '92',
+  height: '1.95',
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
 };
 mark.calcBMI();
 john.calcBMI();
@@ -293,13 +297,21 @@ john.calcBMI();
 // "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
 console.log(mark.bmi, john.bmi);
 if (mark.bmi > john.bmi) {
-    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`)
+  console.log(
+    `${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
+      john.fullName
+    }'s (${john.calcBMI()})`
+  );
 } else {
-    console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)
-     };
+  console.log(
+    `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+      mark.fullName
+    }'s (${mark.calcBMI()})`
+  );
+}
 
 /*Loops*/
-//repetitions: 
+//repetitions:
 // console.log('Exquisite repitition 1');
 // console.log('Exquisite repitition 2');
 // console.log('Exquisite repitition 3');
@@ -311,20 +323,23 @@ if (mark.bmi > john.bmi) {
 // console.log('Exquisite repitition 9');
 // console.log('Exquisite repitition 10');
 /* forLOOP */
-for(let rep = 1; rep <= 10;
-    //rep = rep + 1
-    rep++) {
-console.log(`Exquisite repitition ${rep}`);
-    };
+for (
+  let rep = 1;
+  rep <= 10;
+  //rep = rep + 1
+  rep++
+) {
+  console.log(`Exquisite repitition ${rep}`);
+}
 
 /*Looping array*/
 const victory = [
-    'Victory',
-    'Agholor',
-    2040 - 2003,
-    'student',
-    ['Timmy', 'Tobi', 'Joy'],
-    true
+  'Victory',
+  'Agholor',
+  2040 - 2003,
+  'student',
+  ['Timmy', 'Tobi', 'Joy'],
+  true,
 ];
 const types = [];
 // console.log(victory[0]);
@@ -334,115 +349,102 @@ const types = [];
 // .
 // console.log(victory[4]);
 // victory[5] doesn't exist
-for(let i = 0; i < victory.length; i++) {
- // reading for victory array
-    console.log(victory[i], typeof victory[i]);
-//filing types array
-//types[i] = typeof victory[i];
-     types.push(typeof victory[i]);
-    }
+for (let i = 0; i < victory.length; i++) {
+  // reading for victory array
+  console.log(victory[i], typeof victory[i]);
+  //filing types array
+  //types[i] = typeof victory[i];
+  types.push(typeof victory[i]);
+}
 console.log(types);
 
 const years = [1991, 2003, 2007, 2020];
 const ages = [];
 
-for(let i = 0; i < years.length; i++) {
-    ages.push(2030 - years[i]);
+for (let i = 0; i < years.length; i++) {
+  ages.push(2030 - years[i]);
 }
 console.log(ages);
 
 // Continue and Break statement
-console.log('---ONLY STRINGS---')
-for(let i = 0; i < victory.length; i++) {
-    if (typeof victory[i] !== 'string') continue;
+console.log('---ONLY STRINGS---');
+for (let i = 0; i < victory.length; i++) {
+  if (typeof victory[i] !== 'string') continue;
 
-    console.log(victory[i], typeof victory[i]);
+  console.log(victory[i], typeof victory[i]);
 }
-console.log('---BREAK WITH NUMBER---')
-for(let i = 0; i < victory.length; i++) {
-    if (typeof victory[i] === 'number') break;
+console.log('---BREAK WITH NUMBER---');
+for (let i = 0; i < victory.length; i++) {
+  if (typeof victory[i] === 'number') break;
 
-    console.log(victory[i], typeof victory[i]);
+  console.log(victory[i], typeof victory[i]);
 }
 
 /* LOOPING BACKWARDS */
 const chole = [
-    'Chole',
-    'Garret',
-    2040 - 2004,
-    'teacher',
-    ['Theodore', 'Tori', 'Justin']
+  'Chole',
+  'Garret',
+  2040 - 2004,
+  'teacher',
+  ['Theodore', 'Tori', 'Justin'],
 ];
 //4, 3, ..., 0
-for(let i = chole.length - 1; i >= 0; i--) {
-    console.log(i, chole[i]);
+for (let i = chole.length - 1; i >= 0; i--) {
+  console.log(i, chole[i]);
 }
 
 /*LOOP IN A LOOP*/
-for (let exercise = 1; exercise < 4;  exercise++) {
-    console.log(`-------- Starting Exercise ${exercise}`);
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`-------- Starting Exercise ${exercise}`);
 
-for (let rep = 1; rep < 6;  rep++) {
+  for (let rep = 1; rep < 6; rep++) {
     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}🏋️‍♂️`);
-}
+  }
 }
 
 /* whileLOOP */
 let rep = 1;
 while (rep <= 10) {
-    console.log(`WHILE: Exquisite repitition ${rep}`);
-    rep++;
+  console.log(`WHILE: Exquisite repitition ${rep}`);
+  rep++;
 }
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 
 while (dice !== 6) {
-    console.log(`You rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log('Loop is about to end...');
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to end...');
 }
-
 
 /* CHALLENGE #4*/
 const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+console.log(bills);
+console.log(tips);
+console.log(totals);
+
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    //   sum = sum + arr[i]
+    sum += arr[i];
   }
-  
+  return sum / arr.length;
+};
 
-  
-  const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-  const tips = [];
-  const totals = [];
-  
-  for(let i = 0; i < bills.length; i++) {
-      const tip = calcTip(bills[i]);
-      tips.push(tip);
-      totals.push(tip + bills[i]);
-  }
-      console.log(bills);
-      console.log(tips);
-      console.log(totals);
-      
-  const calcAverage = function(arr) {
-      let sum = 0;
-      for(let i = 0; i < arr.length; i++) {
-      sum = sum + arr[i]
-      }
-   return sum / arr.length   
-  }
-  
-  console.log(calcAverage(totals));
-
-
-
-
-
-
-
-
-
-
-
+console.log(calcAverage(totals));
 
 /*
 // Print “Number is even” if the number is divisible by 2.
