@@ -17,7 +17,6 @@ function logger() {
 //calling / running / invoking function
 logger();
 logger();
-logger();
 
 function fruitProcessor(apples, pineapples) {
   console.log(apples, pineapples);
